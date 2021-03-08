@@ -66,5 +66,10 @@ public class Segment extends FigureSimple {
         System.out.println("s1 = " + s1);
     }
 
+    @Override
+    public double minX() {
+        return Math.min(this.debut.minX(), this.fin.minX());
+    }
+
       
 }

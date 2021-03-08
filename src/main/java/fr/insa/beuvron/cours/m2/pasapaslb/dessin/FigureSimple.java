@@ -11,7 +11,7 @@ import java.awt.Color;
  *
  * @author francois
  */
-public abstract class FigureSimple {
+public abstract class FigureSimple implements Figure{
     
     private Color couleurContour;
     
