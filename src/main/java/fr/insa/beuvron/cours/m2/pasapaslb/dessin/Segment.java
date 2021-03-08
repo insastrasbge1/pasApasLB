@@ -5,16 +5,25 @@
  */
 package fr.insa.beuvron.cours.m2.pasapaslb.dessin;
 
+import java.awt.Color;
+
 /**
  *
  * @author francois
  */
-public class Segment {
+public class Segment extends FigureSimple {
     
     private Point debut;
     private Point fin;
     
     public Segment(Point debut,Point fin) {
+        super(new Color(255, 0, 255));
+        this.debut = debut;
+        this.fin = fin;
+    }
+    
+    public Segment(Point debut,Point fin,Color couleur) {
+        super(couleur);
         this.debut = debut;
         this.fin = fin;
     }

@@ -5,20 +5,27 @@
  */
 package fr.insa.beuvron.cours.m2.pasapaslb.dessin;
 
+import java.awt.Color;
+
 /**
  *
  * @author francois
  */
-public class Point {
+public class Point extends FigureSimple {
 
     private double px;
     private double py;
 
     public Point() {
-        this(0.0, 0.0);
+        this(0.0, 0.0, Color.black);
     }
 
     public Point(double abs, double ord) {
+        this(abs,ord,Color.black);
+    }
+
+    public Point(double abs, double ord,Color couleur) {
+        super(couleur);
         this.px = abs;
         this.py = ord;
     }
